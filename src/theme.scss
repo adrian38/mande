@@ -1,0 +1,44 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$blue-app-miruta: (
+    50: #ffffff,
+    100: #b4c9e4,
+    200: #43B0FF,
+    300: #3C9EEB,
+    400: #368DCE,
+    500: #2F7CB4,
+    600: #296A9B,
+    700: #1B4667,
+    800: #0D2334,
+    900: #071217,
+    A100: #1d1d1d,
+    A200: #dde6f3,
+    A400: #3C9EEB,
+    A700: #368DCE,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $black-87-opacity,
+        A700: white,
+    )
+);
+
+$my-app-primary: mat-palette($blue-app-miruta);
+$my-app-accent:  mat-palette($mat-pink, 500, 900, A100);
+$my-app-warn:    mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+@include angular-material-theme($my-app-theme);
+
+

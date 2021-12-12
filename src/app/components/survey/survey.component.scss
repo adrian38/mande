@@ -1,0 +1,177 @@
+
+
+div {
+    margin: auto;
+    display: flex;
+    height: 25%;
+    width: 375px;
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        margin: auto;
+        background-color: rgb(0, 38, 100);
+        border-radius: 8px;
+        color: white;
+        padding: 10px;
+        justify-content: stretch;
+        font-size: 30px;
+    }
+    mat-radio-group {
+        margin: auto;
+    }
+    button {
+        margin: auto;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(0, 38, 100);
+        size: 14px;
+    }
+    img{
+        display: flex;
+        margin: auto;
+        
+        width: 100%;
+    }
+    
+    
+}
+button:disabled,
+button[disabled] {
+                    border: 1px solid #999999 !important;
+    background-color: #cccccc !important;
+    color: #666666 !important;
+}
+
+.example-radio-group {
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.mat-radio-button {
+    margin: opx;
+}
+ 
+//--------- Círculo interior--------//
+::ng-deep #mat-radio-2 .mat-radio-inner-circle
+{
+    background-color: rgb(0, 0, 255);
+}
+::ng-deep #mat-radio-3 .mat-radio-inner-circle
+{
+    background-color: rgb(0, 255, 255);
+
+}
+::ng-deep #mat-radio-4 .mat-radio-inner-circle 
+{
+    background-color: rgb(0, 255, 0);
+}
+::ng-deep #mat-radio-5  .mat-radio-inner-circle 
+{
+    background-color: rgb(255, 127, 0);
+}
+
+::ng-deep #mat-radio-6 .mat-radio-inner-circle
+{
+    background-color: rgb(255, 0, 0);
+}
+//--------- Círculo interior--------//
+
+//--------- Círculo BORDE EXTERIOR--------//
+::ng-deep #mat-radio-2 .mat-radio-outer-circle
+{
+    border-color: rgb(0, 0, 255);
+}
+::ng-deep #mat-radio-3 .mat-radio-outer-circle
+{
+    border-color: rgb(0, 255, 255);
+}
+::ng-deep #mat-radio-4 .mat-radio-outer-circle 
+{
+    border-color: rgb(0, 255, 64);
+}
+::ng-deep #mat-radio-5  .mat-radio-outer-circle
+{
+    border-color: rgb(255, 127, 0); 
+    z-index: 100;
+}
+::ng-deep #mat-radio-6 .mat-radio-outer-circle
+{
+    border-color: rgb(255, 51, 0);
+}
+//--------- Círculo BORDE EXTERIOR--------//
+
+//--------- TEXTO--------//
+::ng-deep #mat-radio-2 .mat-radio-label-content
+{
+    padding-left: 3px;
+    padding-right: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+::ng-deep #mat-radio-3 .mat-radio-label-content
+{
+    padding-left: 3px;
+    padding-right: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+::ng-deep #mat-radio-4 .mat-radio-label-content
+{
+    padding-left: 3px;
+    padding-right: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+::ng-deep #mat-radio-5  .mat-radio-label-content
+{
+    padding-left: 3px;
+    padding-right: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+::ng-deep #mat-radio-6 .mat-radio-label-content
+{
+    padding-left: 3px;
+    padding-right: 6px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+#container_color{
+    display: flex;
+    margin:  auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    height: 30px;
+}
+#container_box{
+    display: flex;
+    margin: auto;
+    width: 375px;
+    height: 30px;
+}
+#container_img{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 40%;
+    width: 375px;
+    height: 30px;
+}
+
+#building{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 375px;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: blur(6px);
+}
+

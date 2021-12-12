@@ -1,0 +1,24 @@
+
+#sener{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    width: 50%;
+    height: 6%;
+    top: 0;
+    left: 0;
+}
+#building{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 375px;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: blur(6px);
+}

@@ -1,0 +1,41 @@
+<body>
+    <div>
+        <h2>Como calificas tu sensación térmica</h2>
+    </div>
+
+    <div id="container_color">
+            <div id="blue_strong">
+
+            </div>
+            <div id="blue">
+    
+            </div>
+            <div id="green">
+
+            </div>
+            <div id="yellow">
+    
+            </div>
+            <div id="red">
+
+            </div>
+    </div>
+
+
+    <div id="container_box">
+        <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="selectedSensation">
+                <mat-radio-button color="primary" *ngFor="let sensation of sensations" [value]="sensation">
+                    {{ sensation }}
+                </mat-radio-button>
+        </mat-radio-group>
+    </div>
+
+<div>
+    <button mat-button (click)="sendSensation()" [disabled]="!selectedSensation || !requestService.tableId">ENVIAR</button>
+</div>
+
+    <div id="container_img">
+        <img src="assets/img/respira-logo en azul.png">
+    </div>
+<img id="building" src="assets/img/descarga.jpg">
+</body>
